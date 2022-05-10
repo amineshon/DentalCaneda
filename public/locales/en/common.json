@@ -1,0 +1,329 @@
+{
+    "num": "{{value, number}}",
+    "date": "{{value, datetime(fromFormat: 'YYYY-MM-DD', toFormat: 'DD MMMM YYYY')}}",
+    "after_elapsed_time": "Retry after {{value, number}}",
+    "bitmax": "Bitmax",
+    "language": "language",
+    "change-locale": "فا",
+    "change-theme": "Change Theme",
+    "header": {
+        "crypto-camp": "Trading club",
+        "crypto-market": "Market",
+        "academy": "Academy",
+        "contact_us": "Contact Us",
+        "contact_us_subtitle": " Stay in touch with Bitmax",
+        "quick_buy_sell": "Quick Buy/Sell",
+        "quick_buy_sell_subtitle": "Trade easily and immediately",
+        "cryptocurrency_subtitle": " Instant view of cryptocurrencies",
+        "cryptocurrency": "Cryptocurrency market",
+        "about_us": "About Us",
+        "blog": "Blog",
+        "blog_subtitle": "Up-to-date information",
+        "about_us_subtitle": "Know better Bitmax",
+        "faq": "FAQ",
+        "faq_subtitle": "Answer all your questions"
+    },
+    "footer": {
+        "contact_us": "Contact Us",
+        "about_us": "About Us",
+        "join_us": "Join us",
+        "support": "Support",
+        "faq": "FAQ",
+        "registration_guide": "Registration guide",
+        "service_guide": "Service guide",
+        "terms_and_condition": "Terms and Condition",
+        "trading_rules": "Trading rules",
+        "trading_fee": "Trading fee"
+    },
+
+
+    "title": {
+        "auth-login": "Login",
+        "auth-register": "Register",
+        "auth-forget-password": "Forgot Password",
+        "dashboard-ticket-list": "Tickets List",
+        "dashboard-ticket-new": "New Ticket",
+        "dashboard-ticket-view": "Ticket",
+        "dashboard-profile": "Profile",
+        "dashboard-cards": "Bank Accounts",
+        "dashboard-withdraw": "Withdraw",
+        "dashboard-deposit": "Deposit",
+        "dashboard-history": "History",
+        "dashboard-security": "Security",
+        "dashboard-security-history": "Login History",
+        "dashboard-wallet": "Wallet",
+        "dashboard-quick-order": "Quick Order",
+        "dashboard-referral": "Referral",
+        "contact": "Contact us",
+        "about": "About us",
+        "product": ""
+    },
+
+    "form": {
+        "firstname": "First name",
+        "lastname": "Last name",
+        "sheba_number": "Sheba Number",
+        "bank_card_number": "Card Number",
+        "email": "Email",
+        "mobile": "Phone number",
+        "national_code": "National Code",
+        "sms": "SMS",
+        "password": "Password",
+        "password_confirm": "Password Confirm",
+        "referral_code": "Referral Code",
+        "optional": "Optional",
+        "text": "Your Message",
+        "search": "Enter CoinName or Symbol",
+
+        "error": {
+            "field_is_required": "Please Enter {{field}}",
+            "field_is_not_valid": "{{field}} is not valid",
+            "passwords_mismatch": "Passwords mismatch",
+            "password_is_not_valid": "At least 8 character with 1 number and 1 special character",
+            "min_char": "حداقل {{value, number}} کاراکتر",
+            "min_1_digit": "حداقل یک عدد",
+            "min_1_special_char": "حداقل یک حرف کاراکتر خاص",
+            "min_1_uppercase_char": "حداقل یک حرف بزرگ"
+        }
+    },
+
+    "feedback": {
+        "password_changed_successfully": "کلمه عبور شما با موفقیت تغییر کرد",
+        "send_message_successfully": "Massage sent successfully"
+
+    },
+
+    "action": {
+        "next": "Next",
+        "submit": "Submit",
+        "login": "Login",
+        "register": "Register",
+
+        "send_new_code": "send new code",
+        "forgot_your_password": "Forgot your password?",
+        "register_now": "Register now",
+        "do_not_have_an_account": "Do not have an account?",
+
+        "forgot_your_password": "Forgot your password?",
+        "register_now": "Register now",
+        "login_to_account": "Login to account?",
+        "do_not_have_an_account": "Do not have an account?",
+        "send_code_via_call": "اSend code via phone call",
+        "confirm_terms_and_conditions": "I have read and accept",
+        "return_to_main_page": "Main page",
+        "send_message": "Send Message"
+
+    },
+
+    "login": {
+        "title": "Login to your Bitmax account",
+        "subtitle": "Welcome, enter your mobile number to login"
+    },
+
+
+
+    "register": {
+        "titles": {
+            "0": "Please provide your info",
+            "1": "Enter verification code",
+            "2": "Enter credit card",
+            "3": "Confirm Information"
+        },
+        "subtitle": "Welcome, create an account with a mobile number",
+        "steps": {
+            "0": "User Info",
+            "1": "Verification code",
+            "2": "Bank and Password",
+            "3": "Confirm Info"
+        }
+    },
+
+    "forget-password": {
+        "titles": {
+            "0": "Change Password",
+            "1": "Send verification code",
+            "2": "New Password"
+        },
+        "send_verification_code": "Send verification via email or sms"
+    },
+
+
+    "table-header": {
+        "titles": {
+            "0": "coin",
+            "1": "price",
+            "2": "changes",
+            "3": "charts",
+            "4": "order",
+            "5": "details"
+        }
+    },
+    "input-button": {
+        "button": "Register",
+        "input": "Enter your email address"
+    },
+
+
+    "newsletters": {
+        "title": "Stay tuned"
+
+    },
+
+    "kycInfoPage": {
+        "title": {
+            "0": "Contact US",
+            "1": "How shall we help you?"
+        },
+        "subtitle": {
+            "0": "Our specialized colleagues are pleased to answer you during office days and 24/7 hours, let's keep in touch with us.",
+            "1": "We're always trying to improve our services based on your comments and suggestions. Therefore, we admit your suggestions and criticisms. Please contact our team with the form below."
+        },
+        "address": " Mammut Tower, No7, Bahman Keshavrz (seven) Alley, Khaled Eslamboli (Vozara) Ave, Teahrn, Iran"
+    },
+    "landingPage": {
+        "title": {
+            "0": "What is BITMAX?",
+            "1": "Safe and Reliable",
+            "2": "Professional but Simple",
+            "3": "24-hour support",
+            "4": "Where is the starting point?",
+            "5": "Signup",
+            "6": "KYC Authentication",
+            "7": "Start trading",
+            "8": "Vision",
+            "9": "Mission"
+        },
+        "subtitle": {
+            "0": "BITMAX is a marketplace for providing safe, reliable, leading, and stable financial services such as the cryptocurrency market. There're many services in the BITMAX platform that enable you to buy and sell easily and quickly in the Bitmax market at every hour and use the 24-7 support of BITMAX.",
+            "1": "Protecting your information and assets in the BITMAX marketplace is our first and main priority. Benefiting from expert technical teams and the latest technologies assures you to trade safely and protect your asset.",
+            "2": "BITMAX is an advanced trading platform, but at the same time, we chose simplicity to use our product base to do your transactions faster than ever.",
+            "3": "At any time of the day, it's enough to share your request for guidance or advice with our 24-hour support team! At BITMAX, we've also prepared a comprehensive guideline to FAQ so that no questions remain unanswered.",
+            "4": "At Starting Point, the first step to buying and selling cryptocurrencies in the BITMAX is to register.In BITMAX, the registration and KYC processes are not separate.The whole process of signup takes less than 2 minutes! Start your cryptocurrency transactions quickly and easily ..",
+            "5": "Your mobile number, national code, and bank card number are all the information that you need to register.",
+            "6": "To register, It's just enough to have the same ownership of your mobile number and national ID.",
+            "7": "Now, You can buy, sell or trade the currencies of your choice with the Bitmax trading platform.",
+            "8": "The specialized Marketplace platform for providing crypto asset investment services based on blockchain and fintech",
+            "9": "Implementing a free and transparent financial market in digital transactions to build trust and lunch new investment opportunities"
+        },
+        "button": "signUp",
+        "link": "‌more info",
+        "more": "More Coin Info",
+        "toman": "toman",
+        "tether": "tether"
+    },
+    "kycInfo": {
+        "title": {
+            "1": "First step",
+            "2": "Second step",
+            "3": "Third step",
+            "4": "Enter basic information",
+            "5": "Mobile number confirmation",
+            "6": "Complete user information"
+        },
+        "subtitle": {
+            "0": "In order to use the Bitmax platform, you need to join Bitmax users through the registration process and receiving login information. We strive to keep the registration process simple and fast at all times.",
+            "1": "First, you need to enter your mobile number, national code, and accept the Terms & Conditions checkbox. Notice that the mobile number you enter must belong to your national code. If you have a referral code, you can enter the invitation code received from individuals in the relevant box",
+            "2": "In the next step, we send an OTP code. The received SMS contains a 6-digit numeric code. To enter this step, please enter that code in the relevant box.",
+            "3": "Now, in the last step of a form that includes your identity information (name and card number, Sheba number, Bankcard) is shown, you can also enter your email address, finally by confirming the form, you will register and authenticate. Now, You can trade with champions"
+        }
+    },
+    "hiring": {
+        "topContent": "Build your career path in one of the leading cryptocurrency markets and thrive with financial market professionals!",
+        "topContentTittle": "Job Opportunities",
+        "topContentSpan": " Bitmax ",
+        "aboutTittle": " About ",
+        "aboutSubTittle": "Bitmax is a trustworthy, operating, and stable cryptocurrency trading marketplace. You can quickly and effortlessly buy, sell, or trade Cryptocurrencies on the Bitmax platform. Also, if you need support, 24h& 7week, even on holidays, get guidance from our expert support team for your transactions.",
+        "aboutSubTittleTow": "Bitmax is a new but powerful member of the MAMMUT World Industrial Group , which was established after a long period of research, study, and planning.",
+        "WorkWithUs": "Cooperate with US",
+        "AccordionComTitleOne": "Bitmax culture",
+        "AccordionComTitleToW": "Apply process in Bitmax",
+        "AccordionComTitleThree": " What are the benefits of working with us? ",
+        "AccordionComParagraphOne": "Members of Bitmax's human resources are assets and the roots of Bitmax's organizational culture. At Bitmax, we work together with passion and endless motivation to achieve our personal, professional, and organizational goals promptly. We are ready to work hard so that our customers can achieve their goals with delight and benefit from Bitmax services optimally.",
+        "AccordionComParagraphTow": "Once your resume reaches the HR team, your ability to work with the Bitmax team will be considered in 5 steps.Achieving your professional and experimental knowledge in the field of the job you are applying for, ‌ Coordination with Bitmax organizational culture, coordination with the quality conditions desired by the ",
+        "AccordionComParagraphThree": "Cooperation with Bitmax allows you to experience continuous learning and growth by working and you can grow in Iran's crypto ecosystem and be an influential person.At Bitmax, you will work with the professionals of the crypto market professionals and you will have unlimited opportunities.",
+        "AccordionComTitleFour": "Cooperation Conditions",
+        "AccordionComParagraphFour": "Indeed, hard skills such as education, experience, expertise and professional background related to the job position you are regarding are considered points, but it is not the only criterion for assessing your eligibility to work at Bitmax.",
+        "opportunitiesTapone": "All",
+        "opportunitiesTapTow": "Marketing team",
+        "opportunitiesTaThree": "Technical team ",
+        "opportunitiesTapFour": "Human Resources Team",
+        "opportunitiesTapFive": "Financial team ",
+        "opportunitiesTapSix": "Legal Team",
+        "opportunitiesTapSeven": "Executive Team"
+
+
+
+    },
+    "CareerOpportunities": {
+        "tittle": "Collaboration opportunities ",
+        "nameCompany": "‌BitMax"
+
+    },
+    "termsandconditions": {
+        "explanation0": "جهت استفاده از خدمات شرکت مکث تبادل نوین‌راد تحت عنوان پلتفرم بیتمکس لازم است تا ثبت نام و احراز هویت کنید. تلاش بیتمکس این بوده است که سریعترین و آسان‌ترین روش را برای احراز هویت کاربران انجام دهیم. به همین منظور لازم است که کاربران، شماره تلفن همراهی را که در هنگام ثبت‌نام وارد می‌کنند مطابق با کد ملی آنها باشد زیرا بیتمکس از ارائه خدمات به جز شرایط توضیح داده شده معذور است.",
+        "explanation1": "نام و نام‌خانوادگی، کد ملی و شماره کارت بانکی که هنگام ساخت حساب کاربری در پلتفرم بیتمکس ثبت کرده‌اید، سند هویتی شما است، مسئولیت درستی این اطلاعات با شماست و تنها م‌یتوانید یک حساب کاربری این با مشخصات در بیتمکس داشته باشید.",
+        "explanation2": "الزام است که شماره کارت بانکی وارد شده توسط کاربر باید با کد ملی و، شماره تلفن همراه ثبت شده در مرحله ثبت نام یکسان باشد. تمام این اقدامات به جهت حفظ امنیت و اطلاعات کاربران است . در صورتیکه هر یک از موارد فوق (شماره تلفن، شماره کد ملی، شماره کارت بانکی)‌ بصورت اشتباه توسط کاربر وارد شود، بیتمکس حق توقف ارائه خدمات به کاربر فوق و ارجاع موارد تخلف به مراجع ذیصلاح را خواهد داشت. ",
+        "explanation3": "بیتمکس خود را متعهد و ملزم به حفظ اطلاعات شخصی کاربران خود می‌داند که اطلاعات کاربران را در اختیار هیچ یک از کاربران دیگر قرار ندهد.",
+        "explanation4": "کاربران پلتفرم بیتمکس قبول و اذعان می‌کنند که تمام فعالیت‌ها ، معاملات  خود در بیتمکس در چارچوب قوانین جمهوری اسلامی بوده و هیچگونه فعالیتی خارج از این چارچوب انجام نداده و نخواهند داد.        ",
+        "explanation5": "پلتفرم بیتمکس به‌عنوان یک بازار آنلاین تبادل ارزهای دیجیتال، هیچ گونه مسئولیتی در قبال نحوه‌ی معاملات کاربران و سود و زیان حاصل از آن ندارد. همچنین کاربر می پذیرد که مسئولیت وارد کردن مقدار درخواست و قیمت خرید و فروش (در بازار ریالی، تومانی ، خرید و فروش سریع) بر عهده کاربر است.",
+        "explanation6": "کاربران  ثبت نام شده در بیتمکس تعهد می‌کنند که از خدمات پلتفرم بیتمکس تنها برای شخص خود استفاده میکند، همچنین تمام مسئولیت‌های استفاده از خدمات پلتفرم بیتمکس برای فرد یا افراد دیگری که فرآیند ثبت نام و احراز هویت (KYC & Register) را طی نکرده باشد به عهده کاربراست. ",
+        "explanation7": "تمامی اطلاعات مالی مانند شماره حساب، شماره کارت، شماره شبا اعلام شده به پلتفرم بیتمکس و همچنین آدرس کیف پول‌ها جهت واریز و برداشت رمزارز نیز می‌بایستی متعلق به کاربربیتمکس باشد و کاربران مجاز به دادن آدرس کیف پول متعلق به دیگران نیستند.",
+        "explanation8": "نهادهای قضایی مانند پلیس فتا، ممکن است برداشت رمزارز به مدت 24 تا 72 ساعت کاری پس از زمان واریز از طریق درگاه شتابی، محدود گردد.",
+        "explanation9": "بازار رمزارزها بازار پرنوسان و پرریسک است. در تمامی بازارهای این‌چنینی هیچ نهادی نمی‌تواند سوددهی سرمایه‌گذاری کاربران را تضمین نماید. از همین رو کاربران بیتمکس می‌پذیرند که مسئول سود و زیان احتمالی ایشان از خرید و فروش رمزارز در دونه، تنها و تنها خود کاربران هستند.",
+        "explanation10": "کاربران پلتفرم بیتمکس قبول می‌کنند و اذعان می‌کنند  که بازار رمرزها یک بازار پر ریسک است که ممکن است با کاهش یا افزایش‌های ناگهانی مواجه شود و کاربران از ریسک‌های مربوط به سرمایه‌گذاری در ارزهای دیجیتال مطلع هستند و با قبول این شرایط با صلاحدید خودشان اقدام به سرمایه‌گذاری و تبادل می‌کنند.",
+        "explanation11": "تیم متخصص بیتمکس در تلاش برای استفاده از بروزترین تکنوژی‌های امنیتی جهت حفظ اطلاعات کاربران است، لذا هرگونه اشتباه عمدی و غیرعمدی مانند سهل‌انگاری  کاربران بیتمکس در نگهداری و حفظ اطلاعات امنیتی از جمله رمز عبور، قراردادن تلفن‌همراه خود،  بیتمکس هیچ مسئولیتی به عهده نخواهد داشت.",
+        "explanation12": "تلاش برای نفوذ، تخریب و ایجاد هرگونه اختلال در پلتفرم بیتمکس یا استفاده غیرمنصفانه از آن و یا استفاده بر خلاف مفاد این توافق‌نامه ممنوع است و چنانچه کاربری، به تشخیص بیتمکس به مبادرت به هر یک از این اقدامات کند، بیتمکس مجاز به مسدود کردن حساب کاربری فرد متخلف و پیگیری قانونی است.",
+        "explanation13": "هرگونه استفاده‌ای که خارج از حدود متعارف و معقول استفاده از پلتفرم بیتمکس و یا باعث ایجاد اختلال در آن و یا سواستفاده از باگهای نرم‌افزاری و نظایر آن و یا هر اقدامی که مانع ارائه خدمات به سایر کاربران و یا ایجاد اختلال در کسب و کار شود استفاده غیر منصفانه محسوب خواهد شد",
+        "explanation14": "بیتمکس پیشنهاد اکید استفاده ازرمزهای‌عبور سخت، عدم استفاده از اطلاعات شخصی  برای انتخاب رمز عبور و روش‌های ورود ۲عاملی از طریق روش‌هایی مانند تلفن همراه و یا نرم‌افزا‌رهای امنیتی مانند گوگل آتنتیکیتور (Google Authenticator) اکیداً توصیه می شود.",
+        "explanation15": "نکته مهمی که کاربران بیتمکس نیاز است که توجه ویژه به آن داشته باشند این است که در مقابل واریز توکن (Tokn) یا کوین(Coin) بر بستر (Network) اشتباه یا کوین‌هایی که در پلتفرم بیتمکس پشتیبانی نمی‌شود هیچ گونه مسئولیتی نداشته و با توجه به سازو کار ذخیره سازی سرد امکان استخراج این توکن‌ها با استفاده از ولت ثالث وجود ندارد. لذا مسئولیت هرگونه واریز اشتباه با خود کاربر بوده و کاربر حق هیچ گونه شکایتی را نخواهد داشت.",
+        "explanation16": "در صورتیکه کاربر پلتفرم بیتمکس قصد برداشت (withdraw) ارزهای دیجیتال را داشته باشد،  مسئولیت وارد کردن آدرس صحیح کیف پول بر عهده‌ی خود اواست. در صورت بروز هر گونه مشکل اعم از اشتباه در ورود آدرس صحیح، نقص آدرس، مشکلات کیف پول مقصد و بلوکه شدن دارایی‌های کاربران در کیف پول مقصد، هیچ گونه مسئولیتی به عهده ی بیتمکس نخواهد بود.        ",
+        "explanation17": "درخواست برداشت ریالی از حساب کاربری در سریع‌ترین زمان ممکن پس از ثبت، توسط تیم بیتمکس بررسی خواهد شد. زمان واریز پول به حساب کاربران بیتمکس بر اساس محدودیت‌های انتقال وجه بین بانکی، متفاوت خواهد بود. جهت  اطلاعات بیش‌تر، لازم است  قوانین انتقال وجه بین بانکی ( پایا ، ساتنا) را مطالعه  فرمایید.",
+        "explanation18": "کاربرپلتفرم بیتمکس قبول و اذعان می‌کند که به جز مواردی که بیتمکس آنرا متعهد شده است، کاربر حق هیچ گونه داعیه، طلب و شکایت از پلتفرم نوبیتکس، مدیران، کارمندان و تمام افراد مرتبط با این سرویس را نخواهد داشت.        ",
+        "explanation19": "باتوجه به اینکه پلتفرم بیتمکس ارائه دهنده نوعی از خدمات مالی است نیاز است تا کاربران بیتمکس بدانند که تحت هر عنوان بصورت اشتباه یا من غیر حق، وجه نقدی (‌به حساب کاربری)  یا رمزارزی را به کیف پول کاربر مدنظر یا در محاسبات خود هر نوع اشتباهی رخ دهد، هر زمان از شبانه روز مجاز و مختار است راساً و مستقلاً و بدون انجام هیچ گونه تشریفات اداری و قضائی و دریافت اجازه کتبی از متعهد (صاحب حساب) در رفع اشتباه و برداشت از حساب‌های وی اقدام کند و تشخیص بیتمکس نسبت به وقوع اشتباه یا پرداخت بدون حق و لزوم برداشت از حساب معتبر خواهد بود و کاربر حق هرگونه اعتراض و ادعایی را در خصوص نحوه عملکرد بیتمکس از هر جهت از خود ساقط می نماید.",
+        "explanation20": "موجودی کیف‌پول هر حساب کاربری را تنها می‌توان به حسابی با شماره‌ی شبایی متعلق به همان کاربر (صاحب همان کد ملی) واریز کرد و اگر چنین حسابی به پلتفرم بیتمکس معرفی نشود، موجود کیف پول تا زمان معرفی شماره شبای معتبری به نام همان فرد نزد بیتمکس به امانت خواهد ماند.         ",
+        "explanation21": "در صورت هرگونه سوء استفاده از کد ریفرال پلتفرم بیتمکس در فعالیت‌های خلاف قانون، تمامی مسئولیت آن به عهده کاربر بوده و بیتمکس هیچ گونه مسئولیتی در قبال هرگونه سوء استفاده از سیستم معرفی خود به هر نحو ندارد. ",
+        "explanation22": "بیتمکس این حق را دارد که در صورت مشاهده هرگونه سوء استفاده بدون نیاز به دستور قضایی کد معرف (ریفرال)‌ را باطل و کد معرف را مسدود کند.",
+        "explanation23": "در صورت فوت یا حجر کاربر، بیتمکس این حق را خواهد داشت که …………………. ",
+
+        "tittle": "termsandconditions",
+        "nameCompany": " BitMax "
+    },
+    "faq": {
+        "explanationOne": "This page answers most of the frequently asked questions you may have about the Bitmax marketplace or cryptocurrencies in general. If you can not find the answer to your question here, please conect to ",
+        "explanationLink": " Bitmax support ",
+        "explanationTow": "so that our experts can answer you as soon as possible.",
+        "GeneralQuestionsTittleOne": "What service does Bitmax provide?",
+        "GeneralQuestionsExplanationOne": "Bitmax is a safe and easy crypto platform for trade and quick buying and selling cryptocurrencies in Iran. This trading marketplace platform, which is one of the companies under the MAMMUT Industrial Group, started its activity in 1400 after months of research and investigation.",
+        "GeneralQuestionsTittleToW": "What is cryptocurrency?",
+        "GeneralQuestionsExplanationTow": "Cryptocurrencies are one of the types of digital currencies that are generated using cryptography. Cryptocurrencies are usually implemented in a decentralized method, meaning that no central financial institution or service provider is involved in their maintenance.",
+        "KYCTittleOne": "",
+        "KYCExplanationOne": "",
+        "KYCTittleToW": "",
+        "KYCExplanationTow": "",
+        "TradingPlatformTittleOne": "",
+        "TradingPlatformExplanationOne": "",
+        "TradingPlatformTittleToW": "",
+        "TradingPlatformExplanationTow": "",
+        "VerticalTabsTittleOne": "General Questions",
+        "VerticalTabsTittleTow": "KYC",
+        "VerticalTabsTittleThree": "Trading Platform",
+        "faqTittle": "Frequently Asked Questions"
+    },
+    "aboutUs": {
+        "companyName": "  BITMAX",
+        "WhatIs": "What is ",
+        "Explanation": "BITMAX is a marketplace for providing safe, reliable, leading, and stable financial services such as the cryptocurrency market.There're many services in the BITMAX platform that enable you to buy and sell easily and quickly in the Bitmax market at every hour and use the 24-7 support of BITMAX.",
+        "SloganOne": "Responsible and Trustworthy",
+        "SloganTow": " Completely safe platform",
+        "SloganThree": "Legal licenses",
+        "SloganFure": "24-hour support",
+        "vision": "Bitmax vision",
+        "visionExplanation": "We are working to make the cryptocurrency economy pervasive because we believe that with the help of the ecosystem, financial systems will be transparent, efficient, accessible, and equitable for all.In this way, we have built a safe, fast, and serious professional market and we always strive to achieve success for our customers, because our success is also tied to it.",
+        "values": "What are our values?",
+        "valuesExplanation": "At Bitmax, we focus on quality and building trust because we seek to create the best experience and gain the most benefit for our customers. Transparency in transactions, empowering people with technology, and experiencing new ways of trading in financial markets."
+    }
+
+
+
+
+}

@@ -1,0 +1,6 @@
+.next
+.storybook
+storybook-static
+locales
+coverage
+next-env.d.ts

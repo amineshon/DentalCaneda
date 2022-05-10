@@ -1,0 +1,8 @@
+{
+  "locales": ["fa", "en-US"],
+  "defaultLocale": "fa",
+  "localeDetection": false,
+  "pages": {
+    "*": ["common", "menu"]
+  }
+}

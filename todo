@@ -1,0 +1,22 @@
+✔ Add bundle analyzer @done(21-12-18 17:00)
+✔ Add i18n library @done(21-12-18 17:06)
+✔ Add husky @done(21-12-21 17:54)
+✔ Add fonts @done(22-01-18 11:22)
+✔ Add number, currency and date i18n @done(22-01-18 11:22)
+✔ Add redux toolkit @done(22-01-18 11:22)
+✔ Add theming system @done(22-01-18 11:22)
+
+☐ Fix ssr style
+☐ Fix ltr rtl issues in material ui
+☐ Update icon style in inputs
+☐ Fix input persian numbers
+☐ Fix stepper style in register page
+☐ Fix Typescript issues
+☐ Find a way to define default props and remove react/require-default-props from lint
+
+☐ Add google analytics
+☐ Add page transition
+☐ swr or rtk
+☐ Add storybook
+☐ Add toast and alerts
+☐ Add modals
