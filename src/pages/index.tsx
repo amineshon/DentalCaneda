@@ -35,6 +35,8 @@ import VideoModal from 'components/Basic/videoModal/VideoModal';
 import Carousels from 'components/Molecules/Card/card';
 import styled from '@emotion/styled';
 import Carousel from 'react-multi-carousel';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+
 
 type HomeProps = {
   locale: string;
@@ -296,9 +298,26 @@ const Home = () => {
             </Typography>
           </GridPics>
           <GridPicTo item xs={12} md={4}>
-            <Typography variant="h4" gutterBottom component="div">
+            <Typography className='firstContentPicTo' variant="h4" gutterBottom component="div">
               Dental Hygiene
             </Typography>
+            <Grid className='secendContentPicTo'>
+              <div>
+              <ArrowForwardIosIcon/>
+              <p  variant="h5" gutterBottom component="div">
+              Dental Hygiene
+            </p>
+              </div>
+              <div>
+              <ArrowForwardIosIcon/>
+              <p  variant="h5" gutterBottom component="div">
+              Dental Hygiene
+            </p>
+              </div>
+
+
+            </Grid>
+
           </GridPicTo>
           <GridPicT item xs={12} md={4}>
             <Typography variant="h4" gutterBottom component="div">
@@ -644,6 +663,30 @@ const GridPicTo = styled(Grid)`
   align-items: center;
   justify-content: center;
   color: #fff;
+  transition: all 0.5s ease;
+    .secendContentPicTo{
+    display:none ;
+  }
+  
+  .firstContentPicTo{
+    display:block ;
+  }
+  :hover{
+    .firstContentPicTo{
+    display:none ;
+  }
+  .secendContentPicTo{
+    display: flex;
+    flex-direction: column;
+    div{
+      display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 120%;
+
+    }
+  }
+  }
 `;
 const GridPicT = styled(Grid)`
   background-image: url('/images/homePage/p3.png');
