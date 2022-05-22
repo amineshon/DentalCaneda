@@ -16,7 +16,12 @@ import Image from 'next/image';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import Logo from '../../components/Basic/Logo/index';
-
+import CallIcon from '@mui/icons-material/Call';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import MailIcon from '@mui/icons-material/Mail';
+import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
+import MedicalServicesIcon from '@mui/icons-material/MedicalServices';
+import MenuBookIcon from '@mui/icons-material/MenuBook';
 // Component
 const Footer = () => {
   const matches = useMediaQuery((theme) => theme.breakpoints.up('md'), {
@@ -36,24 +41,32 @@ const Footer = () => {
 
   const BottomNavigationActionStyled = styled(BottomNavigationAction)`
     .Mui-selected {
-      color: ${(p) => p.theme.palette.warning.main};
+      color: #3F434C;
+;
     }
   `;
   const BottomNavigationStyled = styled(BottomNavigation)`
     .MuiBottomNavigationAction-root {
-      color: ${(p) => p.theme.palette.text.primary};
-      flex-direction: row;
+      color: #3F434C;
+            flex-direction: row;
     }
 
     .Mui-selected {
-      color: ${(p) => p.theme.palette.warning.main} !important;
-    }
+      color: #3F434C;    }
   `;
 
   return matches ? (
     <FooterDiv>
       {/* <Newsletters title={'در جریان باشید!'} /> */}
-      <Grid container spacing={2}>
+      <Grid container sx={{alignItems:'flex-end'}} spacing={2}>
+        <GridFooter item xs={3}>
+          <Logo />
+          <Typography sx={{marginTop:'10px'}} variant="body1" gutterBottom component="div">
+            Our team of independent dental professionals with years of
+            experience is dedicated to our patients with excellent distinguished
+            dental services that deliver outstanding results.
+          </Typography>
+        </GridFooter>
         <GridFooter item xs={3}>
           <Typography
             sx={{ fontWeight: '700' }}
@@ -84,46 +97,41 @@ const Footer = () => {
             gutterBottom
             component="div"
           >
-            Phone Number
+            Resources
           </Typography>
+          <a href="./hygiene">
+            <Typography variant="body1" gutterBottom component="div">
+              About Us
+            </Typography>
+          </a>
+          <a href="./general">
+            <Typography variant="body1" gutterBottom component="div">
+               Blog
+            </Typography>
+          </a>
           <Typography variant="body1" gutterBottom component="div">
-            <a href="tel:+1416746005">(416) 746-0005</a>
-          </Typography>
-          <Typography variant="body1" gutterBottom component="div">
-            <a href="tel:+6476205444">(647) 620-5444</a>
+            Contact Us
           </Typography>
         </GridFooter>
         <GridFooter item xs={3}>
-          <Typography
-            sx={{ fontWeight: '700' }}
-            variant="h5"
-            gutterBottom
-            component="div"
-          >
-            Hours
+          <DivIconFooter>
+          <CallIcon/>
+          <Typography marginLeft='20px' marginTop='10px' variant="body1" gutterBottom component="div">
+          (416) 746-0005 - (647) 620-5444
           </Typography>
-          <Typography variant="body1" gutterBottom component="div">
-            Mon-Thur : 8am - 5pm
+          </DivIconFooter>
+          <DivIconFooter>
+          <LocationOnIcon/>
+          <Typography marginLeft='20px' marginTop='10px' variant="body1" gutterBottom component="div">
+          3212 Weston Road, North York, M9M 2T7
           </Typography>
-          <Typography variant="body1" gutterBottom component="div">
-            Friday : 8am - 5pm
+          </DivIconFooter>
+          <DivIconFooter>
+          <MailIcon/>
+          <Typography marginLeft='20px' marginTop='10px' variant="body1" gutterBottom component="div">
+          Aedentalart@gmail.com
           </Typography>
-          <Typography variant="body1" gutterBottom component="div">
-            Sat : With Appointment
-          </Typography>
-        </GridFooter>
-        <GridFooter item xs={3}>
-          <Typography
-            sx={{ fontWeight: '700' }}
-            variant="h5"
-            gutterBottom
-            component="div"
-          >
-            Address
-          </Typography>
-          <Typography variant="body1" gutterBottom component="div">
-            3212 Weston Road, North York, M9M 2T7 Ontario, Canada
-          </Typography>
+          </DivIconFooter>
         </GridFooter>
       </Grid>
     </FooterDiv>
@@ -142,17 +150,17 @@ const Footer = () => {
       <BottomNavigationActionStyled
         label="Servises"
         value="/"
-        icon={<HomeIcon />}
+        icon={<MedicalServicesIcon />}
       />
       <BottomNavigationActionStyled
         label="Blog"
         value="/"
-        icon={<HomeIcon />}
+        icon={<MenuBookIcon />}
       />
       <BottomNavigationActionStyled
         label="Contact Us"
-        value="/"
-        icon={<HomeIcon />}
+        value="/contactus"
+        icon={<ContactPhoneIcon />}
       />
     </BottomNavigationStyled>
   );
@@ -162,57 +170,22 @@ const GridFooter = styled(Grid)`
 `;
 
 const FooterDiv = styled.div`
-  background: #476b8a;
+  background: #3F434C;
   display: flex;
   min-height: 315px;
   align-items: center;
   padding: 0 50px;
+
 `;
-const TypographyLink = styled(Typography)`
-  a {
-    color: #6875f7;
-  }
+const DivIconFooter =styled.div`
+display:flex ;
+align-items:center ;
+justify-content: flex-start;
 `;
-const FooterLinkRow = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  margin-bottom: 30px;
-  padding-top: 40px;
-`;
-const FooterLine = styled.div`
-  display: flex;
-  color: #fff;
-  justify-content: left;
-  align-items: baseline;
-  flex-direction: column;
-  text-align: left;
-  margin-top: 70px;
-  line-height: 2;
-`;
-const Copyright = styled.p`
-  color: #fcb400;
-  font-size: 16px;
-  text-align: center;
-  margin-top: 100px;
-`;
-const LogoImg = styled.img`
-  width: 190px;
-`;
-const LinkSection = styled.div`
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-  align-content: center;
-  justify-content: space-between;
-`;
-const FooterGrid = styled(Grid)`
-  display: flex;
-  align-items: center;
-`;
-const LogoSection = styled.div`
-  text-align: center;
-`;
+
+
+
+
+
 
 export default Footer;

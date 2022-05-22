@@ -37,7 +37,6 @@ import styled from '@emotion/styled';
 import Carousel from 'react-multi-carousel';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
-
 type HomeProps = {
   locale: string;
 };
@@ -106,7 +105,7 @@ const Home = () => {
             sx={{
               color: '#fff',
               fontWeight: '700',
-              marginBottom:'50px'
+              marginBottom: '50px',
             }}
             variant="h5"
             gutterBottom
@@ -145,7 +144,12 @@ const Home = () => {
                 To A&E Clinic
               </Typography>
             </Grid>
-            <Typography sx={{color:'#343434'}} variant="body1" gutterBottom component="div">
+            <Typography
+              sx={{ color: '#343434' }}
+              variant="body1"
+              gutterBottom
+              component="div"
+            >
               With years of professional experience and extensive insight into
               preventative measures for better dental health, we offer general
               and cosmetic dental services to the community with utmost care and
@@ -183,7 +187,7 @@ const Home = () => {
                       backgroundColor: '#fff',
                       minWidth: '160px',
                       minHeight: '45px',
-                      fontWeight:'700'
+                      fontWeight: '700',
                     }}
                     children={'about US'}
                   />
@@ -228,7 +232,12 @@ const Home = () => {
             >
               Healthier You
             </Typography>
-            <Typography sx={{color:'#343434'}} variant="subtitle1" gutterBottom component="div">
+            <Typography
+              sx={{ color: '#343434' }}
+              variant="subtitle1"
+              gutterBottom
+              component="div"
+            >
               We work with you to help keep your mouth healthy, attain and
               maintain oral health, which in turn makes an important
               contribution to your overall health.
@@ -244,7 +253,12 @@ const Home = () => {
             >
               Affodable
             </Typography>
-            <Typography sx={{color:'#343434'}} variant="subtitle1" gutterBottom component="div">
+            <Typography
+              sx={{ color: '#343434' }}
+              variant="subtitle1"
+              gutterBottom
+              component="div"
+            >
               Not everyone has dental insurance. At A&E Dental Centre, you can
               expect to get professional, immaculate and personalized dental
               services at discounted rates.
@@ -260,7 +274,12 @@ const Home = () => {
             >
               Convinient
             </Typography>
-            <Typography sx={{color:'#343434'}} variant="subtitle1" gutterBottom component="div">
+            <Typography
+              sx={{ color: '#343434' }}
+              variant="subtitle1"
+              gutterBottom
+              component="div"
+            >
               We appreciate your daily busy schedules. We offer a relaxed
               environment where you do not feel rushed and are scheduled in a
               time that works for you.
@@ -298,26 +317,28 @@ const Home = () => {
             </Typography>
           </GridPics>
           <GridPicTo item xs={12} md={4}>
-            <Typography className='firstContentPicTo' variant="h4" gutterBottom component="div">
+            <Typography
+              className="firstContentPicTo"
+              variant="h4"
+              gutterBottom
+              component="div"
+            >
               Dental Hygiene
             </Typography>
-            <Grid className='secendContentPicTo'>
+            <Grid className="secendContentPicTo">
               <div>
-              <ArrowForwardIosIcon/>
-              <p  variant="h5" gutterBottom component="div">
-              Dental Hygiene
-            </p>
+                <ArrowForwardIosIcon />
+                <p variant="h5" gutterBottom component="div">
+                  Dental Hygiene
+                </p>
               </div>
               <div>
-              <ArrowForwardIosIcon/>
-              <p  variant="h5" gutterBottom component="div">
-              Dental Hygiene
-            </p>
+                <ArrowForwardIosIcon />
+                <p variant="h5" gutterBottom component="div">
+                  Dental Hygiene
+                </p>
               </div>
-
-
             </Grid>
-
           </GridPicTo>
           <GridPicT item xs={12} md={4}>
             <Typography variant="h4" gutterBottom component="div">
@@ -353,7 +374,12 @@ const Home = () => {
           </Grid>
           <Grid item xs={12} md={4}>
             <BoxContentRevies>
-              <Typography sx={{color:'#343434'}} variant="body1" gutterBottom component="div">
+              <Typography
+                sx={{ color: '#343434' }}
+                variant="body1"
+                gutterBottom
+                component="div"
+              >
                 A&E Dental Centre is a well-organized and clean office. They
                 helped me out to re-schedule my appointments many times and
                 treated me with respect. It feels like home here
@@ -363,7 +389,12 @@ const Home = () => {
           </Grid>
           <Grid item xs={12} md={4}>
             <BoxContentRevies>
-              <Typography sx={{color:'#343434'}} variant="body1" gutterBottom component="div">
+              <Typography
+                sx={{ color: '#343434' }}
+                variant="body1"
+                gutterBottom
+                component="div"
+              >
                 Although visits to the dentist are typically frightening, the
                 friendly service makes it comfortable in here. A&E Dental Centre
                 is my favourite dental office!
@@ -402,58 +433,78 @@ const Home = () => {
             </Typography>
           </Grid>
         </SloganRow>
-        <Grid sx={{ alignItems: 'center' }} container spacing={2}>
+        <Grid sx={{ alignItems: 'center', justifyContent:'space-around' }} container spacing={2}>
           <Grid item md={6} lg={6} xs={12}>
             <FormGrid>
               <LabelInput>
-              Full Name
+                Full Name
                 <InputForm type="text" name="name" />
               </LabelInput>
               <LabelInput>
-              Email Address
+                Email Address
                 <InputForm type="mail" name="Emaile" />
               </LabelInput>
               <LabelInput>
-              Phone Number
+                Phone Number
                 <InputForm type="tel" name="PhoneNumber" />
               </LabelInput>
               <LabelInput>
-              Message
-              <TextareaForm/>
+                Message
+                <TextareaForm />
               </LabelInput>
-              <ButtonDiv >
-              <SubmitInput type="submit" value="Submit" />
+              <ButtonDiv>
+                <SubmitInput type="submit" value="Submit" />
               </ButtonDiv>
-              
             </FormGrid>
           </Grid>
-          <Grid item md={6} lg={6} xs={12}>
-            <Grid>
-              <Typography
-                sx={{ marginBottom: '10px', fontWeight: '700',color:'#323232' }}
+        </Grid>
+        <Grid sx={{ alignItems: 'center',marginTop:'150px',marginBottom:'-9%'}} container spacing={6}>
+          <Grid sx={{zIndex:'1'}} item md={4} lg={4} xs={12}>
+          <GridContacUSDetail>
+          <Typography
+                sx={{
+                  marginBottom: '10px',
+                  fontWeight: '700',
+                  color: '#323232',
+                }}
                 variant="h6"
                 gutterBottom
                 component="div"
               >
                 Hours
               </Typography>
-              <Typography sx={{color:'#323232'}} variant="body2" gutterBottom>
+              <Typography
+                sx={{ color: '#323232' }}
+                variant="body2"
+                gutterBottom
+              >
                 Mon-Thur : 8am - 5pm
               </Typography>
-              <Typography sx={{color:'#323232'}} variant="body2" gutterBottom>
+              <Typography
+                sx={{ color: '#323232' }}
+                variant="body2"
+                gutterBottom
+              >
                 Friday : 8am - 5pm
               </Typography>
-              <Typography sx={{color:'#323232'}} variant="body2" gutterBottom>
+              <Typography
+                sx={{ color: '#323232' }}
+                variant="body2"
+                gutterBottom
+              >
                 Sat : With Appointment
               </Typography>
-            </Grid>
-            <Grid>
-              <Typography
+
+            </GridContacUSDetail>
+          </Grid>
+          <Grid sx={{zIndex:'1'}} item md={4} lg={4} xs={12}>
+          <GridContacUSDetail>
+          <Typography
                 sx={{
                   marginBottom: '10px',
                   marginTop: '10%',
                   fontWeight: '700',
-                  color:'#323232',
+                  color: '#323232',
                 }}
                 variant="h6"
                 gutterBottom
@@ -467,14 +518,17 @@ const Home = () => {
               <TypographyLink variant="body2" gutterBottom>
                 <a href="tel:+6476205444">(647) 620-5444</a>
               </TypographyLink>
-            </Grid>
-            <Grid>
-              <Typography
+
+            </GridContacUSDetail>
+          </Grid>
+          <Grid sx={{zIndex:'1'}} item md={4} lg={4} xs={12}>
+          <GridContacUSDetail>
+          <Typography
                 sx={{
                   marginBottom: '10px',
                   marginTop: '10%',
                   fontWeight: '700',
-                  color:'#323232',
+                  color: '#323232',
                 }}
                 variant="h6"
                 gutterBottom
@@ -482,30 +536,35 @@ const Home = () => {
               >
                 Address
               </Typography>
-              <Typography sx={{color:'#323232'}} variant="body2" gutterBottom>
-           
-                  3212 Weston Road, North York,
-                  <br />
-                  M9M 2T7 Ontario, Canada
-              
+              <Typography
+                sx={{ color: '#323232' }}
+                variant="body2"
+                gutterBottom
+              >
+                3212 Weston Road, North York,
+                <br />
+                M9M 2T7 Ontario, Canada
               </Typography>
               <TypographyLink variant="body2" gutterBottom>
                 <a href="#">Get Direction</a>
               </TypographyLink>
-            </Grid>
+
+            </GridContacUSDetail>
           </Grid>
         </Grid>
-
         <Grid container>
           <Grid item xs={12}>
             <iframe
-              title="map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d809.69758998853!2d51.415313829277395!3d35.73137399876139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e014eb0073efb%3A0x7d59079f25f6d85a!2sMammut!5e0!3m2!1sen!2s!4v1587801898468!5m2!1sen!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.6585489248055!2d-79.54212598458666!3d43.73841965493398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3067bf8b54b5%3A0xac418b6fe192298e!2sA%26E%20Dental%20Centre!5e0!3m2!1sen!2ssc!4v1653213963144!5m2!1sen!2ssc"
               width="100%"
-              style={{ marginBottom: '45px', marginTop: '100px', zIndex: '1' }}
-              height="320px"
+              height="486"
+              style={{ marginBottom: '45px', marginTop: '100px',  }}
+              allowfullscreen=""
+              loading="lazy"
               frameborder="0"
+              referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
+        
           </Grid>
         </Grid>
       </Container>
@@ -513,60 +572,70 @@ const Home = () => {
   );
 };
 
-const LabelInput =styled.label`
-color:#323232
+const GridContacUSDetail =styled(Grid)`
+display:flex ;
+justify-content:center ;
+align-items:center ;
+flex-direction:column ;
+background-color:#ffffff ;
+min-height:223px ;
+border-radius:5px ;
+margin-bottom:-10% ;
+`
 
+
+const LabelInput = styled.label`
+  color: #323232;
 `;
 
 const ButtonDiv = styled.div`
-font-weight:700 ;
-text-align:center ;
+  font-weight: 700;
+  text-align: center;
 `;
 
-const InputForm =styled.input`
-width:100% ;
-padding:10px ;
-border: 1px solid #A6A6A6 ;
-border-radius:5px ;
-position:block ;
-min-height:50px ;
-margin: 6px 0 20px 0;
-:focus { 
+const InputForm = styled.input`
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #a6a6a6;
+  border-radius: 5px;
+  position: block;
+  min-height: 50px;
+  margin: 6px 0 20px 0;
+  :focus {
     outline: none !important;
-    border-color: #6875F7;
-    
-}`;
+    border-color: #6875f7;
+  }
+`;
 
 const TextareaForm = styled.textarea`
-  width:100% ;
-border: 1px solid #A6A6A6 ;
-border-radius:5px ;
-position:block ;
-min-height:112px ;
-margin: 6px 0 20px 0;
-padding:10px ;
-:focus { 
+  width: 100%;
+  border: 1px solid #a6a6a6;
+  border-radius: 5px;
+  position: block;
+  min-height: 112px;
+  margin: 6px 0 20px 0;
+  padding: 10px;
+  :focus {
     outline: none !important;
-    border-color: #6875F7;
-    
-}
+    border-color: #6875f7;
+  }
 `;
 const SubmitInput = styled.input`
-font-family:Peyda  !important;
-font-weight:700 ;
-background: #6875F7;
-border-radius: 5px;
-height:45px ;
-min-width:112px ;
-border:none ;
-color:#fff ;
-text-align:center ;
-cursor:pointer;
-:hover{
-  background: #4F5FFF;
-border-radius: 5px;
-
-}`
+  font-family: Peyda !important;
+  font-weight: 700;
+  background: #6875f7;
+  border-radius: 5px;
+  height: 45px;
+  min-width: 112px;
+  border: none;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  :hover {
+    background: #4f5fff;
+    border-radius: 5px;
+  }
+`;
 
 const TypographyLink = styled(Typography)`
   a {
@@ -585,10 +654,10 @@ const FormGrid = styled.form`
 `;
 
 const AbutusButton = styled(Button)`
-:hover{
-color:#fff ;
-background-color:#4F5FFF;
-}
+  :hover {
+    color: #fff;
+    background-color: #4f5fff;
+  }
 `;
 
 const SloganRow = styled(Grid)`
@@ -641,7 +710,7 @@ const BgBannerCenter = styled(Box)`
   height: 406px;
   text-align: center;
   margin-bottom: 20%;
-  border-radius:5px ;
+  border-radius: 5px;
 `;
 
 const GridPics = styled(Grid)`
@@ -664,28 +733,27 @@ const GridPicTo = styled(Grid)`
   justify-content: center;
   color: #fff;
   transition: all 0.5s ease;
-    .secendContentPicTo{
-    display:none ;
+  .secendContentPicTo {
+    display: none;
   }
-  
-  .firstContentPicTo{
-    display:block ;
-  }
-  :hover{
-    .firstContentPicTo{
-    display:none ;
-  }
-  .secendContentPicTo{
-    display: flex;
-    flex-direction: column;
-    div{
-      display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 120%;
 
-    }
+  .firstContentPicTo {
+    display: block;
   }
+  :hover {
+    .firstContentPicTo {
+      display: none;
+    }
+    .secendContentPicTo {
+      display: flex;
+      flex-direction: column;
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 120%;
+      }
+    }
   }
 `;
 const GridPicT = styled(Grid)`
@@ -714,20 +782,20 @@ const GoogleBox = styled(Typography)`
   width: fit-content;
 `;
 const BoxContentRevies = styled(Box)`
- background: #ffffff;
-    box-shadow: 0px 0px 30px rgb(181 181 181 / 25%);
-    border-radius: 5px;
-    min-height: 218px;
-    padding: 30px;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    align-content: flex-start;
-    justify-content: space-between;
-   
+  background: #ffffff;
+  box-shadow: 0px 0px 30px rgb(181 181 181 / 25%);
+  border-radius: 5px;
+  min-height: 218px;
+  padding: 30px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: space-between;
+
   a {
     color: #4060ff;
-    font-weight:700 ;
+    font-weight: 700;
   }
 `;
 const GridMixPic = styled(Grid)`
@@ -748,7 +816,6 @@ const GridIconContent = styled(Grid)`
   }
 `;
 const GridAboutUsBanner = styled(Grid)`
-
   img {
     width: 90%;
   }

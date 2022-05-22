@@ -11,13 +11,12 @@ import {
   AppBar,
   Box,
   Divider,
-  Link as MaterialLink,
+  Link,
   Menu,
   MenuItem,
   Typography,
 } from '@mui/material';
 import Image from 'next/image';
-import Link from 'components/Basic/Link';
 import Logo from 'components/Basic/Logo';
 import Container from 'layout/Container';
 import Button from 'components/Basic/Button';
@@ -123,45 +122,26 @@ const Header = () => {
   ];
 
   const mobileLinks = [
+   
     {
       key: '0',
-      label: t('header.crypto-camp'),
+      label: 'Services',
       children: [
         {
-          labels: t('header.quick_buy_sell'),
-          details: t('header.quick_buy_sell_subtitle'),
-          href: '/',
+          labels: 'Dental Hygiene',
+          href: '/hygiene',
+        },
+        {
+          labels: 'General Dentistry',
+          href: '/general',
+        },
+        {
+          labels: 'Cosmetic Dentistry',
+          href: '/general',
         },
       ],
     },
-    {
-      key: '1',
-      label: t('footer.support'),
-      children: [
-        {
-          labels: t('header.faq'),
-          href: '/faq',
-        },
-        {
-          labels: t('footer.registration_guide'),
-          href: '/kycInfo',
-        },
-      ],
-    },
-    {
-      key: '2',
-      label: t('footer.terms_and_condition'),
-      children: [
-        {
-          labels: t('footer.trading_rules'),
-          href: '/termsandconditions',
-        },
-        {
-          labels: t('footer.trading_fee'),
-          href: '/tradingRules',
-        },
-      ],
-    },
+    
   ];
 
   const MenuStyle = styled(Menu)`
@@ -184,7 +164,8 @@ const Header = () => {
           display: 'flex',
           alignItems: 'center',
           maxWidth: '100%',
-          padding: '57px 20px',
+          minHeight:'112px',
+          borderBottom:'solid 1px #fff',
           background: {
             md: '#27272770',
             xs: 'linear-gradient(180deg, #120024 21.29%, #102441 142.94%)',
@@ -199,58 +180,136 @@ const Header = () => {
             width: '100%',
           }}
         >
-          <div>
-            <Logo margin={'60px'} />
-          </div>
-          <Content>
-            <Box sx={{ flexGrow: 1 }} />
-            {/* <ThemeSwitchButton />
-          <Box>
-            <Button
-              onClick={() => {
-                const l = locale === 'fa' ? 'en' : 'fa';
-                i18n.changeLanguage(l);
-                router.push({ pathname, query }, asPath, { locale: l });
-              }}
-              sx={{
-                backgroundColor: '#1C345426',
-                '&:hover': {
+          
+          <DivTittle>
+            <LinkHeadrIteam href="#" variant="h6">
+              {'Home'}
+            </LinkHeadrIteam>
+            <LinkHeadrIteam href="#" variant="h6">
+              {'Services'}
+            </LinkHeadrIteam>
+            <LinkHeadrIteam href="#" variant="h6">
+              {'About Us'}
+            </LinkHeadrIteam>
+            {/* <Box sx={{ flexGrow: 1 }} />
+            <ThemeSwitchButton />
+            <Box>
+              <Button
+                onClick={() => {
+                  const l = locale === 'fa' ? 'en' : 'fa';
+                  i18n.changeLanguage(l);
+                  router.push({ pathname, query }, asPath, { locale: l });
+                }}
+                sx={{
                   backgroundColor: '#1C345426',
-                },
-              }}
-            >
-              <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                {t('change-locale')}
-                {locale === 'fa' ? (
-                  <EnglishFlagSvg style={{ marginRight: '6px' }} />
-                ) : (
-                  <IranFlagSvg style={{ marginLeft: '6px' }} />
-                )}
-              </Box>
-            </Button>
-          </Box> */}
-
-            <a href="./">Home</a>
-            <a href="./hygiene">Servises</a>
-            <a href="#">About Us</a>
-
+                  '&:hover': {
+                    backgroundColor: '#1C345426',
+                  },
+                }}
+              >
+                <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                  {t('change-locale')}
+                  {locale === 'fa' ? (
+                    <EnglishFlagSvg style={{ marginRight: '6px' }} />
+                  ) : (
+                    <IranFlagSvg style={{ marginLeft: '6px' }} />
+                  )}
+                </Box>
+              </Button>
+            </Box> */}
+          </DivTittle>
+          <Box>
+            <Logo/>
+          </Box>
+          <DivTittle>
             <Button children={'Contact Us'} />
-          </Content>
+          </DivTittle>
+          
         </HeaderWeb>
         {/* responsive */}
         <Box
           sx={{
+            padding: '4%',
             flexGrow: 1,
             display: { xs: 'flex', md: 'none' },
-            justifyContent: { xs: 'center' },
+            justifyContent: { xs: 'space-between' },
           }}
         >
+          <IconButton size="large" onClick={handleOpenNavMenu}>
+            <MenuIcon sx={{ fill: '#5B6676' }} />
+          </IconButton>
+          <MenuStyle
+            id="menu-appbar"
+            anchorEl={anchorElNav}
+            keepMounted
+            transformOrigin={{
+              vertical: 'top',
+              horizontal: 'left',
+            }}
+            open={Boolean(anchorElNav)}
+            onClose={handleCloseNavMenu}
+            sx={{
+              display: { xs: 'block', md: 'none' },
+            }}
+          >
+            <MenuItem sx={{ direction: 'ltr' }}>
+              <Link
+                sx={{
+                  mx: 2,
+                  color: (t) => t.palette.text.primary,
+                  '&:hover': {
+                    backgroundColor: 'inherit',
+                  },
+                  display: 'flex',
+                  alignItems: 'center',
+                }}
+                href="/"
+              >
+                Home
+              </Link>
+            </MenuItem>
+            <MenuItem sx={{ flexDirection: 'column', direction: 'ltr' }}>
+              {mobileLinks.map((l) => (
+                <DropdownList
+                  title={l.label}
+                  key={l.key}
+                  children={l.children}
+                  accordion={true}
+                />
+              ))}
+            </MenuItem>
+            
+        
+            <MenuItem sx={{ direction: 'ltr' }}>
+              <Link
+                sx={{
+                  mx: 2,
+                  color: (t) => t.palette.text.primary,
+                  '&:hover': {
+                    backgroundColor: 'inherit',
+                  },
+                  display: 'flex',
+                  alignItems: 'center',
+                }}
+                href="/aboutus"
+              >
+                About Us
+              </Link>
+            </MenuItem>
+
+          </MenuStyle>
+
           <Logo />
+         
         </Box>
       </Box>
     </AppBar>
   );
 };
+const TypographyHeaderItem = styled(Typography)`
+  color: #fff;
+  margin: 0 10px;
+`;
 
 const HeaderWeb = styled(Box)`
   display: flex;
@@ -264,7 +323,7 @@ const HeaderWeb = styled(Box)`
   }
 `;
 const Content = styled.div`
-  a {
+  /* a {
     margin: 0 15px;
     color: #fff;
     transition: all 0.5s ease;
@@ -272,13 +331,30 @@ const Content = styled.div`
   a:hover {
     border-bottom: 3px solid #fff;
     border-radius: 2%;
-  }
+    background-color:#fff ;
+  } */
 `;
-const ButtonHeadr = styled(Button)`
-  :hover {
-    border-bottom: none !important;
-    border-radius: none !important;
-  }
+const LinkHeadrIteam = styled(Link)`
+ margin-right:15px;
+    color: #fff;
+    transition: all 0.9s ease;
+
+:Hover{
+  border-bottom: 3px solid #fff;
+  border-radius: 2%;
+  background: rgba(180, 180, 180, 0.75);
+  height:112px ;
+  display:flex ;
+  justify-content:center ;
+  align-items:center ;
+}
+`
+
+const DivTittle = styled.div`
+  display:flex ;
+  justify-content:center ;
+  align-items:center ;
+  min-width:20% ;
 `;
 
 export default Header;
