@@ -1,6 +1,6 @@
 @font-face {
     font-family: AirbnbCerealApp;
-    src: url('./Amiri/Amiri-Regular.ttf') format('truetype');
+    src: url('./SansPro/SourceSansPro-ExtraLight.ttf') format('truetype');
     font-style: normal;
     font-weight: 300;
     font-display: auto;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: AirbnbCerealApp;
-    src: url('./Amiri/Amiri-Regular.ttf') format('truetype');
+    src: url('./SansPro/SourceSansPro-Light.ttf') format('truetype');
     font-style: normal;
     font-weight: 400;
     font-display: auto;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: AirbnbCerealApp;
-    src: url('./Amiri/Amiri-Regular.ttf') format('truetype');
+    src: url('./SansPro/SourceSansPro-Regular.ttf') format('truetype');
     font-style: normal;
     font-weight: 500;
     font-display: auto;
@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: AirbnbCerealApp;
-    src: url('./Amiri/Amiri-Bold.ttf') format('truetype');
+    src: url('./SansPro/SourceSansPro-Bold.ttf') format('truetype');
     font-style: normal;
     font-weight: 700;
     font-display: auto;
@@ -32,7 +32,7 @@
 
 @font-face {
     font-family: AirbnbCerealApp;
-    src: url('./Amiri/Amiri-BoldItalic') format('truetype');
+    src: url('./SansPro/SourceSansPro-Black.ttf') format('truetype');
     font-style: normal;
     font-weight: 800;
     font-display: auto;
@@ -40,7 +40,7 @@
 
 @font-face {
     font-family: AirbnbCerealApp;
-    src: url('./Rubik/Rubik-Bold.ttf') format('truetype');
+    src: url('./SansPro/SourceSansPro-Black.ttf') format('truetype');
     font-style: normal;
     font-weight: 900;
     font-display: auto;

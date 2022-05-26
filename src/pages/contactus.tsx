@@ -295,7 +295,7 @@ padding:10px ;
 }
 `;
 const SubmitInput = styled.input`
-font-family:Peyda  !important;
+font-family:AirbnbCerealApp  !important;
 font-weight:700 ;
 background: #6875F7;
 border-radius: 5px;

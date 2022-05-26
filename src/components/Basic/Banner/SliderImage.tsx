@@ -27,7 +27,7 @@ const SliderImage = ({ src, alt, priority, showImage }: SliderImageProps) => {
 const Amin = styled(animated.div)`
 span{
 
-  height:70vh !important;
+  height:1081px !important;
 }
 
 }

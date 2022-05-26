@@ -15,7 +15,10 @@ import {
   Menu,
   MenuItem,
   Typography,
+  Breadcrumbs,
+  Stack,
 } from '@mui/material';
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import Image from 'next/image';
 import Logo from 'components/Basic/Logo';
 import Container from 'layout/Container';
@@ -31,6 +34,8 @@ import PersonAddAlt1OutlinedIcon from '@mui/icons-material/PersonAddAlt1Outlined
 import ThemeSwitchButton from 'components/Basic/ThemeSwitchButton/ThemeSwitchButton';
 import styled from '@emotion/styled';
 import ContactUS from 'pages/contactus';
+
+
 
 const Header = () => {
   const profile = useSelector((state) => state.user.profile);
@@ -64,65 +69,9 @@ const Header = () => {
 
   //////////////////////////////////
 
-  const links = [
-    {
-      key: '0',
-      label: t('header.crypto-camp'),
-      children: [
-        {
-          labels: t('header.quick_buy_sell'),
-          details: t('header.quick_buy_sell_subtitle'),
-          href: '/',
-        },
-      ],
-    },
-    {
-      key: '1',
-      label: t('header.crypto-market'),
-      children: [
-        {
-          labels: t('header.cryptocurrency'),
-          details: t('header.cryptocurrency_subtitle'),
-          href: '/market',
-        },
-      ],
-    },
-    {
-      key: '2',
-      label: t('header.academy'),
-      children: [
-        {
-          labels: t('header.blog'),
-          details: t('header.blog_subtitle'),
-          href: '/',
-        },
-      ],
-    },
-    {
-      key: '3',
-      label: t('header.about_us'),
-      children: [
-        {
-          labels: t('header.about_us'),
-          details: t('header.about_us_subtitle'),
-          href: '/aboutUs',
-        },
-        {
-          labels: t('header.contact_us'),
-          details: t('header.contact_us_subtitle'),
-          href: '/contactUs',
-        },
-        {
-          labels: t('header.faq'),
-          details: t('header.faq_subtitle'),
-          href: '/faq',
-        },
-      ],
-    },
-  ];
+
 
   const mobileLinks = [
-   
     {
       key: '0',
       label: 'Services',
@@ -141,7 +90,6 @@ const Header = () => {
         },
       ],
     },
-    
   ];
 
   const MenuStyle = styled(Menu)`
@@ -151,6 +99,8 @@ const Header = () => {
       width: 256px;
     }
   `;
+
+
 
   return (
     <AppBar
@@ -162,10 +112,11 @@ const Header = () => {
         sx={{
           height: (theme) => theme.shape.headerHeight,
           display: 'flex',
+          flexDirection: 'column',
           alignItems: 'center',
           maxWidth: '100%',
-          minHeight:'112px',
-          borderBottom:'solid 1px #fff',
+          minHeight: '112px',
+          borderBottom: 'solid 1px #fff',
           background: {
             md: '#27272770',
             xs: 'linear-gradient(180deg, #120024 21.29%, #102441 142.94%)',
@@ -180,12 +131,11 @@ const Header = () => {
             width: '100%',
           }}
         >
-          
           <DivTittle>
             <LinkHeadrIteam href="#" variant="h6">
               {'Home'}
             </LinkHeadrIteam>
-            <LinkHeadrIteam href="#" variant="h6">
+            <LinkHeadrIteam className='separatorSelector' href="#" variant="h6">
               {'Services'}
             </LinkHeadrIteam>
             <LinkHeadrIteam href="#" variant="h6">
@@ -219,13 +169,15 @@ const Header = () => {
             </Box> */}
           </DivTittle>
           <Box>
-            <Logo/>
+            <Logo />
           </Box>
           <DivTittle>
             <Button children={'Contact Us'} />
           </DivTittle>
-          
         </HeaderWeb>
+
+       
+
         {/* responsive */}
         <Box
           sx={{
@@ -278,8 +230,7 @@ const Header = () => {
                 />
               ))}
             </MenuItem>
-            
-        
+
             <MenuItem sx={{ direction: 'ltr' }}>
               <Link
                 sx={{
@@ -296,11 +247,9 @@ const Header = () => {
                 About Us
               </Link>
             </MenuItem>
-
           </MenuStyle>
 
           <Logo />
-         
         </Box>
       </Box>
     </AppBar>
@@ -335,26 +284,37 @@ const Content = styled.div`
   } */
 `;
 const LinkHeadrIteam = styled(Link)`
- margin-right:15px;
-    color: #fff;
-    transition: all 0.9s ease;
+  margin-right: 15px;
+  color: #fff;
+  transition: all 0.9s ease;
 
-:Hover{
-  border-bottom: 3px solid #fff;
-  border-radius: 2%;
-  background: rgba(180, 180, 180, 0.75);
-  height:112px ;
-  display:flex ;
-  justify-content:center ;
-  align-items:center ;
-}
-`
+  :hover {
+    border-bottom: 3px solid #fff;
+    border-radius: 2%;
+    background: rgba(180, 180, 180, 0.75);
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .separatorSelector{
+    :Hover {
+      .separator-hover{
+        display: none,
+      }
+    }
+  }
+  
+`;
+
 
 const DivTittle = styled.div`
-  display:flex ;
-  justify-content:center ;
-  align-items:center ;
-  min-width:20% ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 20%;
 `;
 
 export default Header;

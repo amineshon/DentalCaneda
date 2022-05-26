@@ -59,7 +59,7 @@ const Footer = () => {
     <FooterDiv>
       {/* <Newsletters title={'در جریان باشید!'} /> */}
       <Grid container sx={{alignItems:'flex-end'}} spacing={2}>
-        <GridFooter item xs={3}>
+        <GridFooter item md={3} lg={3} xs={3}>
           <Logo />
           <Typography sx={{marginTop:'10px'}} variant="body1" gutterBottom component="div">
             Our team of independent dental professionals with years of
@@ -67,7 +67,7 @@ const Footer = () => {
             dental services that deliver outstanding results.
           </Typography>
         </GridFooter>
-        <GridFooter item xs={3}>
+        <GridFooter item md={3} lg={3} xs={3}>
           <Typography
             sx={{ fontWeight: '700' }}
             variant="h5"
@@ -90,7 +90,7 @@ const Footer = () => {
             Cosmetic Dentistry
           </Typography>
         </GridFooter>
-        <GridFooter item xs={3}>
+        <GridFooter item md={3} lg={3} xs={3}>
           <Typography
             sx={{ fontWeight: '700' }}
             variant="h5"
@@ -113,7 +113,7 @@ const Footer = () => {
             Contact Us
           </Typography>
         </GridFooter>
-        <GridFooter item xs={3}>
+        <GridFooter item md={3} lg={3} xs={3}>
           <DivIconFooter>
           <CallIcon/>
           <Typography marginLeft='20px' marginTop='10px' variant="body1" gutterBottom component="div">

@@ -67,7 +67,7 @@ const Home = () => {
         <Banner />
         <Box
           sx={{
-            height: '560px',
+            height: '100%',
             position: 'absolute',
             display: 'flex',
             justifyContent: 'center',
@@ -76,7 +76,7 @@ const Home = () => {
             left: 0,
             right: 0,
             margin: '0 55px',
-            top: '2vh',
+            top: '4vh',
           }}
         >
           <Typography
@@ -117,7 +117,7 @@ const Home = () => {
           <Button children={'Contact Us'} />
         </Box>
       </Box>
-      <Container sx={{ marginTop: { xs: '10vh', md: '72vh' } }}>
+      <Container sx={{ marginTop: { xs: '10vh', md: '150vh' } }}>
         <Grid
           sx={{ alignItems: 'center', marginBottom: '100px' }}
           container
@@ -220,7 +220,8 @@ const Home = () => {
             </Grid>
           </SloganRow>
         </Grid>
-
+      </Container>
+      <GridThreeItem>
         <Grid container spacing={2}>
           <GridIconContent item xs={12} md={4}>
             <img src="/images/icon/homePage/1.png" alt="" />
@@ -286,6 +287,8 @@ const Home = () => {
             </Typography>
           </GridIconContent>
         </Grid>
+      </GridThreeItem>
+      <Container>
         <SloganRow sx={{ marginTop: '100px' }} item xs={12} md={12}>
           <Grid sx={{ textAlign: 'center' }}>
             <Typography
@@ -403,6 +406,8 @@ const Home = () => {
             </BoxContentRevies>
           </Grid>
         </Grid>
+        </Container>
+        <BoxContactUS>
         <SloganRow container spacing={2}>
           <Grid
             item
@@ -433,7 +438,11 @@ const Home = () => {
             </Typography>
           </Grid>
         </SloganRow>
-        <Grid sx={{ alignItems: 'center', justifyContent:'space-around' }} container spacing={2}>
+        <Grid
+          sx={{ alignItems: 'center', justifyContent: 'space-around' }}
+          container
+          spacing={2}
+        >
           <Grid item md={6} lg={6} xs={12}>
             <FormGrid>
               <LabelInput>
@@ -458,10 +467,26 @@ const Home = () => {
             </FormGrid>
           </Grid>
         </Grid>
-        <Grid sx={{ alignItems: 'center',marginTop:'150px',marginBottom:'-9%'}} container spacing={6}>
-          <Grid sx={{zIndex:'1'}} item md={4} lg={4} xs={12}>
+      
+        </BoxContactUS>
+
+
+        <Container sx={{marginBottom:'100px'}}>
+        <Grid container>
+          <Grid item md={8} lg={8} xs={12}>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.6585489248055!2d-79.54212598458666!3d43.73841965493398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3067bf8b54b5%3A0xac418b6fe192298e!2sA%26E%20Dental%20Centre!5e0!3m2!1sen!2ssc!4v1653213963144!5m2!1sen!2ssc"
+              width="100%"
+              height="100%"
+              allowfullscreen=""
+              loading="lazy"
+              frameborder="0"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </Grid>
+          <Grid item md={4} lg={4} xs={12}>
           <GridContacUSDetail>
-          <Typography
+              <Typography
                 sx={{
                   marginBottom: '10px',
                   fontWeight: '700',
@@ -494,12 +519,9 @@ const Home = () => {
               >
                 Sat : With Appointment
               </Typography>
-
             </GridContacUSDetail>
-          </Grid>
-          <Grid sx={{zIndex:'1'}} item md={4} lg={4} xs={12}>
-          <GridContacUSDetail>
-          <Typography
+            <GridContacUSDetail>
+              <Typography
                 sx={{
                   marginBottom: '10px',
                   marginTop: '10%',
@@ -518,12 +540,9 @@ const Home = () => {
               <TypographyLink variant="body2" gutterBottom>
                 <a href="tel:+6476205444">(647) 620-5444</a>
               </TypographyLink>
-
             </GridContacUSDetail>
-          </Grid>
-          <Grid sx={{zIndex:'1'}} item md={4} lg={4} xs={12}>
-          <GridContacUSDetail>
-          <Typography
+            <GridContacUSDetail>
+              <Typography
                 sx={{
                   marginBottom: '10px',
                   marginTop: '10%',
@@ -548,41 +567,44 @@ const Home = () => {
               <TypographyLink variant="body2" gutterBottom>
                 <a href="#">Get Direction</a>
               </TypographyLink>
-
             </GridContacUSDetail>
-          </Grid>
-        </Grid>
-        <Grid container>
-          <Grid item xs={12}>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.6585489248055!2d-79.54212598458666!3d43.73841965493398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3067bf8b54b5%3A0xac418b6fe192298e!2sA%26E%20Dental%20Centre!5e0!3m2!1sen!2ssc!4v1653213963144!5m2!1sen!2ssc"
-              width="100%"
-              height="486"
-              style={{ marginBottom: '45px', marginTop: '100px',  }}
-              allowfullscreen=""
-              loading="lazy"
-              frameborder="0"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-        
           </Grid>
         </Grid>
       </Container>
     </div>
   );
 };
+const BoxContactUS = styled(Box)`
+  background-image: url('/images/homePage/patternTow.png');
+  background-size: cover;
+  height: 900px;
+  display: flex;
+  flex-direction:column ;
+  justify-content:center ;
+  align-items:center ;
+  margin-top:100px;
+  margin-bottom:100px ;
+  
+`;
 
-const GridContacUSDetail =styled(Grid)`
-display:flex ;
-justify-content:center ;
-align-items:center ;
-flex-direction:column ;
-background-color:#ffffff ;
-min-height:223px ;
-border-radius:5px ;
-margin-bottom:-10% ;
-`
+const GridThreeItem = styled(Box)`
+  background-image: url('/images/homePage/patternOne.png');
+  background-size: cover;
+  height: 550px;
+  display: flex;
+  margin-top: -10%;
+`;
 
+const GridContacUSDetail = styled(Grid)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  min-height: 223px;
+  border-radius: 5px;
+
+`;
 
 const LabelInput = styled.label`
   color: #323232;
@@ -621,7 +643,7 @@ const TextareaForm = styled.textarea`
   }
 `;
 const SubmitInput = styled.input`
-  font-family: Peyda !important;
+  font-family: AirbnbCerealApp !important;
   font-weight: 700;
   background: #6875f7;
   border-radius: 5px;

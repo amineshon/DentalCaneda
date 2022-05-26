@@ -57,7 +57,7 @@ module.exports = {
                 key: 'fa',
                 label: 'French ',
                 direction: 'ltr',
-                fontFamily: 'Peyda',
+                fontFamily: 'AirbnbCerealApp',
             },
             en: {
                 key: 'en',

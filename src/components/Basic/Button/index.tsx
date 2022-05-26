@@ -24,7 +24,8 @@ const Button = ({
 }: PropTypes) => (
   <MaterialButtonEdit
   sx={{
-    backgroundColor:'#6875F7',
+    backgroundColor:'#fff',
+    color:'#476B8A',
     minWidth: '160px',
     minHeight:'45px',
     fontWeight:'700'
@@ -41,7 +42,7 @@ const MaterialButtonEdit = styled(MaterialButton)`
 border-radius: 5px;
 
 :hover{
-  background-color: #4F5FFF;
+  background-color: #efefef;
 }
 `
  
